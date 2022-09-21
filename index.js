@@ -42,11 +42,27 @@ const addManager = () => {
         const { name, id, email, officeNumber} = managerInput;
         const manager = new Manager (name, id, email, officeNumber);
 
-        // Won't work until Manager constructor is built out
+        // Won't work until Manager constructor is built out -- NOW WORKING
         teamArray.push(manager);
         console.log(manager);
+        console.log(teamArray);
     })
 }
 
-addManager()
+
 //Employee prompts begin here
+
+const newEmployee = () => {
+    return inquirer.prompt([
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+    ])
+}
+
+//Call functions and write to index below
+addManager()
