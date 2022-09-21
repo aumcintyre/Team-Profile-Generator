@@ -8,7 +8,7 @@ const Engineer = require('./lib/Engineer');
 //Node Modules
 const fs = require('fs');
 const inquirer = require('inquirer');
-const { resolve } = require('path');
+
 
 //Team array starts blank, will have values pushed based on user-input
 const teamArray = [];
@@ -21,7 +21,6 @@ const addManager = () => {
             type: 'input',
             name: 'name',
             message: 'Who is the manager of this team?',
-
         },
         {
             type: 'input',
@@ -76,14 +75,14 @@ const newEmployee = () => {
             name: 'email',
             message: 'Enter employee email adress.',
         },
-//This question prompts only if 'Engineer' is selected as the role.
+        //This question prompts only if 'Engineer' is selected as the role.
         {
             type: 'input',
             name: 'github',
             message: 'Enter employee Github Username.',
             when: (input) => input.role === "Engineer",
         },
-//This question prompts only if 'Intern' is slected at the role.
+        //This question prompts only if 'Intern' is slected at the role.
         {
             type: 'input',
             name: 'school',
@@ -96,28 +95,28 @@ const newEmployee = () => {
             message: 'Do you want to add another employee?',
         },
     ])
-    .then(employeeInput => {
-        let { name, id, email, role, github, school, confirmAdd } = employeeInput;
-        let employee;
+        .then(employeeInput => {
+            let { name, id, email, role, github, school, confirmAdd } = employeeInput;
+            let employee;
 
-//Need to build out the Intern and Engineer classes for this portion
-    
-        if(role === "Intern"){
-            employee = new Intern (name, id, email, school);
-        } else if (role === "Engineer"){
-            employee = new Engineer (name, id, email, github);
-        }
-        teamArray.push(employee);
+            //Need to build out the Intern and Engineer classes for this portion
+
+            if (role === "Intern") {
+                employee = new Intern(name, id, email, school);
+            } else if (role === "Engineer") {
+                employee = new Engineer(name, id, email, github);
+            }
+            teamArray.push(employee);
 
 
-        if(confirmAdd){
-            return newEmployee(teamArray);
-        }else {
-            return teamArray;
-        }
-    })
+            if (confirmAdd) {
+                return newEmployee(teamArray);
+            } else {
+                return teamArray;
+            }
+        })
 }
 
 //Call functions and write to index below
 addManager()
-.then(newEmployee)
+    .then(newEmployee)
