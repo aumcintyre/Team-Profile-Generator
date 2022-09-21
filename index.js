@@ -14,6 +14,17 @@ const teamArray = [];
 
 //Manager prompts begin here
 
+const addManager = () => {
+return inquirer.prompt ([
+    {
+        type: 'input',
+        name: 'name', 
+        message: 'Who is the manager of this team?',
+        
+    }
+    
+])
+}
 
-
+addManager()
 //Employee prompts begin here
