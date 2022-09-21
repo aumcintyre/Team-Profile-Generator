@@ -38,6 +38,14 @@ const addManager = () => {
             message: "Enter the manager's office number."
         },
     ])
+    .then(managerInput => {
+        const { name, id, email, officeNumber} = managerInput;
+        const manager = new Manager (name, id, email, officeNumber);
+
+        // Won't work until Manager constructor is built out
+        teamArray.push(manager);
+        console.log(manager);
+    })
 }
 
 addManager()
