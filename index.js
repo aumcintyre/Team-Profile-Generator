@@ -45,7 +45,6 @@ const addManager = () => {
             // Won't work until Manager constructor is built out -- NOW WORKING
             teamArray.push(manager);
             console.log(manager);
-            console.log(teamArray);
         })
 }
 
@@ -120,3 +119,4 @@ const newEmployee = () => {
 //Call functions and write to index below
 addManager()
     .then(newEmployee)
+    .then(console.log(teamArray))
