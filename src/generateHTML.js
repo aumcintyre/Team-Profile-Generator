@@ -60,7 +60,7 @@ const generateEngineer = function(engineer) {
                ${engineer.name}
             </h1>
             <h2>
-                Role: 'Intern'
+                Role: 'Engineer'
             </h2>
         </div>
 
