@@ -1,13 +1,19 @@
-const Employee = require("../lib/Employee")
+const Manager = require("../lib/Manager")
 
 
 //Employee constructor functions properly
-describe("Employee", () => {
-    it('Creates a new object withiin the Employee constructor', () => {
-        const employee = new Employee('Austin', 1, 'aumcintyre@gmail.com');
+describe("Manager", () => {
+    it('Creates a new object withiin the Manager constructor', () => {
+        const manager = new Manager('Austin', 1, 'aumcintyre@gmail.com');
         
-        expect(employee.name).toEqual(expect.any(String))
-        expect(employee.id).toEqual(expect.any(Number))
-        expect(employee.email).toEqual(expect.any(String))
+        expect(manager.name).toEqual(expect.any(String))
+        expect(manager.id).toEqual(expect.any(Number))
+        expect(manager.email).toEqual(expect.any(String))
+    })
+
+    it('Gets employee role', () => {
+        const manager = new Manager('Austin', 1, 'aumcintyre@gmail.com');
+
+        expect(manager.getRole()).toEqual("Manager");
     })
 })

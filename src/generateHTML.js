@@ -10,7 +10,7 @@ return `
                 ${manager.name}
             </h1>
             <h2>
-                Role: 'Manager'
+                Manager
             </h2>
         </div>
 
@@ -35,7 +35,7 @@ const generateIntern = function(intern) {
                ${intern.name}
             </h1>
             <h2>
-                Role: 'Intern'
+                Intern
             </h2>
         </div>
 
@@ -60,7 +60,7 @@ const generateEngineer = function(engineer) {
                ${engineer.name}
             </h1>
             <h2>
-                Role: 'Engineer'
+                Engineer
             </h2>
         </div>
 
