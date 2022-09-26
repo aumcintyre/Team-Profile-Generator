@@ -107,6 +107,7 @@ const newEmployee = () => {
             }
             teamArray.push(employee);
             console.log(employee);
+            console.log(teamArray);
 
             if (confirmAdd) {
                 return newEmployee(teamArray);
@@ -120,4 +121,4 @@ const newEmployee = () => {
 //Call functions and write to index below
 addManager()
     .then(newEmployee)
-    .then(console.log(teamArray))
+
