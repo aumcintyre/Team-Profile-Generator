@@ -106,7 +106,7 @@ const newEmployee = () => {
                 employee = new Engineer(name, id, email, github);
             }
             teamArray.push(employee);
-
+            console.log(employee);
 
             if (confirmAdd) {
                 return newEmployee(teamArray);
@@ -114,6 +114,7 @@ const newEmployee = () => {
                 return teamArray;
             }
         })
+
 }
 
 //Call functions and write to index below
