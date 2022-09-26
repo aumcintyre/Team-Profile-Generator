@@ -1,4 +1,5 @@
 //Link to generate page here
+const generateHTML = require('./src/generateHTML')
 
 //Employee Classes
 const Intern = require('./lib/Intern');
@@ -119,6 +120,29 @@ const newEmployee = () => {
 }
 
 //Call functions and write to index below
+
+const writeFile = data => {
+    fs.writeFile('./dist/index.html', data, err => {
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            console.log("Profile created.");
+        }
+    }
+    )
+}
+
+
 addManager()
     .then(newEmployee)
+    .then(teamArray => {
+        return generateHTML(teamArray);
+    })
+    .then(pageHTML => {
+        return writeFile(pageHTML);
+    })
+    .catch(err => {
+        console.log(err);
+    })
 

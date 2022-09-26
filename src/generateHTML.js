@@ -16,7 +16,7 @@ return `
 
         <div class="card-body">
             <p> ID: ${manager.id} </p>
-            <p> EMAIL: <a href="mailtio:${manager.email}> ${manager.email}</a> </p>
+            <p> EMAIL: <a href="mailtio:${manager.email}"> ${manager.email}</a> </p>
             <p> OFFICE: ${manager.officeNumber} </p>
         </div>
 
@@ -41,7 +41,7 @@ const generateIntern = function(intern) {
 
         <div class="card-body">
             <p> ID: ${intern.id} </p>
-            <p> EMAIL: <a href="mailtio:${intern.email}> ${intern.email}</a> </p>
+            <p> EMAIL: <a href="mailtio:${intern.email}"> ${intern.email}</a> </p>
             <p> SCHOOL: ${intern.school} </p>
         </div>
 
@@ -66,7 +66,7 @@ const generateEngineer = function(engineer) {
 
         <div class="card-body">
             <p> ID: ${engineer.id} </p>
-            <p> EMAIL: <a href="mailtio:${engineer.email}> ${engineer.email}</a> </p>
+            <p> EMAIL: <a href="mailtio:${engineer.email}"> ${engineer.email}</a> </p>
             <p> GITHUB: ${engineer.github} </p>
         </div>
 
@@ -101,8 +101,8 @@ generateHTML = (data) => {
 
     const employeeCards = profileArray.join('');
 
-    const generateTeam = generateTeamPage(employeeCards);
-    return generateTeam;
+    const generateProfiles= generateEmployeeProfiles(employeeCards);
+    return generateProfiles;
 }
 
 generateEmployeeProfiles = function (employeeCards){
@@ -124,16 +124,18 @@ generateEmployeeProfiles = function (employeeCards){
     
 <header>
 <nav class="">
-    <span class="">Epmloyee Profiles</span>
+    <span class="">Employee Profiles</span>
 </nav>
 
 </header>
 
-<main class="container">
+<main>
+    <div class="container">
     <div class="row justify-content-center">
 
     ${employeeCards}
 
+</div>
 </div>
 </main>
 
