@@ -6,3 +6,12 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.card-header{
+    background-color:darkgreen;
+    color: antiquewhite;
+}
+
+.card-body{
+    background-color: gray;
+    color: black;
+}
