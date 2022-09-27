@@ -43,7 +43,6 @@ const addManager = () => {
             const { name, id, email, officeNumber } = managerInput;
             const manager = new Manager(name, id, email, officeNumber);
 
-            // Won't work until Manager constructor is built out -- NOW WORKING
             teamArray.push(manager);
             console.log(manager);
         })
@@ -99,7 +98,7 @@ const newEmployee = () => {
             let { name, id, email, role, github, school, confirmAdd } = employeeInput;
             let employee;
 
-            //Need to build out the Intern and Engineer classes for this portion
+
 
             if (role === "Intern") {
                 employee = new Intern(name, id, email, school);
