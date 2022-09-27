@@ -16,7 +16,7 @@ return `
 
         <div class="card-body">
             <p> ID: ${manager.id} </p>
-            <p> EMAIL: <a href="mailtio:${manager.email}"> ${manager.email}</a> </p>
+            <p> EMAIL: <a href="mailto:${manager.email}"> ${manager.email}</a> </p>
             <p> OFFICE: ${manager.officeNumber} </p>
         </div>
 
@@ -41,7 +41,7 @@ const generateIntern = function(intern) {
 
         <div class="card-body">
             <p> ID: ${intern.id} </p>
-            <p> EMAIL: <a href="mailtio:${intern.email}"> ${intern.email}</a> </p>
+            <p> EMAIL: <a href="mailto:${intern.email}"> ${intern.email}</a> </p>
             <p> SCHOOL: ${intern.school} </p>
         </div>
 
@@ -66,7 +66,7 @@ const generateEngineer = function(engineer) {
 
         <div class="card-body">
             <p> ID: ${engineer.id} </p>
-            <p> EMAIL: <a href="mailtio:${engineer.email}"> ${engineer.email}</a> </p>
+            <p> EMAIL: <a href="mailto:${engineer.email}"> ${engineer.email}</a> </p>
             <p> GITHUB: <a href="https://github.com/${engineer.github}">${engineer.github}</a> </p>
         </div>
 
