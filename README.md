@@ -19,7 +19,7 @@ Users should clone this repository from GitHub. The user will also need to insta
 Use inquirer from your command line to answer questions about your project.<br>
 Watch an example video here: 
 [Screencastify](https://watch.screencastify.com/v/QnT2Vs8ZepisWzJ1KRzd)<br>
-![Screenshot](./dist/webpage-screenshot.png)
+![Screenshot](./dist/webpage-screenshot1.png)
 
 ## License 
 This project is licensed under MIT
