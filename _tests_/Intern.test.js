@@ -1,7 +1,7 @@
 const Intern = require("../lib/Intern")
 
 
-//Employee constructor functions properly
+//Intern constructor functions properly
 describe("Intern", () => {
     it('Creates a new object withiin the Intern constructor', () => {
         const intern = new Intern('Austin', 1, 'aumcintyre@gmail.com', 'Indiana');

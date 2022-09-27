@@ -30,7 +30,7 @@ describe("Employee", () => {
     it('Gets employee role value', () => {
         const employee = new Employee('Austin', 1, 'aumcintyre@gmail.com');
 
-        expect(employee.getRole()).toEqual(expect.any(String));
+        expect(employee.getRole()).toEqual("Employee");
     })
 
 //getEmail() functions properly
