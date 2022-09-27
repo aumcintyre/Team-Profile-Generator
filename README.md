@@ -16,7 +16,8 @@ This application is designed to quickly generate a team profile webpage based on
 Users should clone this repository from GitHub. The user will also need to install the Inquirer module, as well as the Jest application for testing.
 
 ## Usage 
-Use inquirer from your command line to answer questions about your project.
+Use inquirer from your command line to answer questions about your project.<br>
+Watch an example video here: 
 [Screencastify](https://watch.screencastify.com/v/eK1qu72tIDrCANzjyVge)<br>
 ![Screenshot](./dist/webpage-screenshot.png)
 
