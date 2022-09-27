@@ -17,7 +17,7 @@ Users should clone this repository from GitHub. The user will also need to insta
 
 ## Usage 
 Use inquirer from your command line to answer questions about your project.
-Screencastify]("VIDEO LINK GOES HERE")<br>
+Screencastify](https://watch.screencastify.com/v/eK1qu72tIDrCANzjyVge)<br>
 ![Screenshot](./dist/webpage-screenshot.png)
 
 ## License 
