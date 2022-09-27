@@ -17,8 +17,8 @@ Users should clone this repository from GitHub. The user will also need to insta
 
 ## Usage 
 Use inquirer from your command line to answer questions about your project.
-<!-- View walk through video here - [Screencastify]("VIDEO LINK GOES HERE")<br> -->
-<img src='./dist/wepage-screenshot.png'>
+Screencastify]("VIDEO LINK GOES HERE")<br>
+![Screenshot](./dist/webpage-screenshot.png)
 
 ## License 
 This project is licensed under MIT
