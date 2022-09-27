@@ -1,5 +1,5 @@
 # Team Profile Generator 
-![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
+![Github license](http://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description 
 This application is designed to quickly generate a team profile webpage based on client input. The application uses Node.js, and spefically Inquirer, to collect data and generate an HTML webpage based on that data.
@@ -17,8 +17,8 @@ Users should clone this repository from GitHub. The user will also need to insta
 
 ## Usage 
 Use inquirer from your command line to answer questions about your project.
-View walk through video here - [Screencastify]("VIDEO LINK GOES HERE")<br>
-<img src="SCREENSHOT GOES HERE">
+<!-- View walk through video here - [Screencastify]("VIDEO LINK GOES HERE")<br> -->
+<img src='./dist/wepage-screenshot'>
 
 ## License 
 This project is licensed under MIT
