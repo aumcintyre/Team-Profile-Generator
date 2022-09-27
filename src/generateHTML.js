@@ -6,12 +6,12 @@ return `
     <div class = "h-125 card">
 
         <div class="card-header">
-            <h1>
-                ${manager.name}
-            </h1>
             <h2>
-                Manager
+                ${manager.name}
             </h2>
+            <h4>
+                Manager
+            </h4>
         </div>
 
         <div class="card-body">
@@ -31,12 +31,12 @@ const generateIntern = function(intern) {
     <div class = "h-125 card">
 
         <div class="card-header">
-            <h1>
-               ${intern.name}
-            </h1>
             <h2>
-                Intern
+               ${intern.name}
             </h2>
+            <h4>
+                Intern
+            </h4>
         </div>
 
         <div class="card-body">
@@ -56,12 +56,12 @@ const generateEngineer = function(engineer) {
     <div class = "h-125 card">
 
         <div class="card-header">
-            <h1>
-               ${engineer.name}
-            </h1>
             <h2>
-                Engineer
+               ${engineer.name}
             </h2>
+            <h4>
+                Engineer
+            </h4>
         </div>
 
         <div class="card-body">
@@ -123,8 +123,8 @@ generateEmployeeProfiles = function (employeeCards){
 <body>
     
 <header>
-<nav class="">
-    <span class="">Employee Profiles</span>
+<nav class="jumbotron text-center bg-dark">
+    <span class="text-light h1">Employee Profiles</span>
 </nav>
 
 </header>
